@@ -1,0 +1,390 @@
+<html>
+    <head><title>TWICE介紹</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin:0;
+            color:gray;
+            /*font-size: 50px;*/
+            text-align:center;
+        }
+        /* top */
+        .top{
+             background-color: white;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            /*border:1px solid red;*/
+            font-size: 25px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        /* nav */
+        .nav {
+            background-color:rgba(255, 150, 171);
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: rgba(255, 150, 171);
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color: white;  
+            text-align: center;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: rgba(215, 150, 171);
+        }
+        /*下拉式選單*/
+        .dropdown:hover .dropdown-content {
+            display: block;   /*使用block呈現上下排列*/
+        }
+        li.dropdown:hover{
+            background-color: rgba(215, 150, 171);  /*設定背景顏色*/
+        }
+        .dropdown-content {  /*設定下拉選單內容格式*/
+            display: none;
+            position: absolute;
+            background-color: rgba(255, 150, 171);
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {/*設定下拉選單連結內容格式*/
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* slider */
+        .slider{
+            background-color: black;
+        }
+        /* banner*/
+        .banner{
+            background-image: linear-gradient(#fcdf8a,#f38381);
+            padding:30px;
+        }
+        .banner h1{
+            padding: 20px;
+        }
+        /*faculty*/
+       .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+}
+      .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+      }
+      .faculty .container {
+          /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+      }
+      .faculty .teacher{
+          /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+      }
+      .faculty .teacher img{
+            height: 260px;
+            width: 200px;
+      }
+      .faculty .teacher h3{
+            color: White;
+            background-color: rgba(255, 150, 171);
+            text-align: center;           
+      }
+      /*faculty*/
+      .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+}
+      .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+      }
+      .faculty .container {
+          /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+      }
+      .faculty .member{
+          /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+      }
+      .faculty .member img{
+            height: 260px;
+            width: 200px;
+      }
+      .faculty .member h3{
+            color: White;
+            background-color: rgba(255, 150, 171);
+            text-align: center;           
+      }
+      /*faculty*/
+      .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+}
+      .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+      }
+      .faculty .container {
+          /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+      }
+      .faculty .once{
+          /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+      }
+      .faculty .once img{
+            height: 260px;
+            width: 200px;
+      }
+      .faculty .once h3{
+            color: White;
+            background-color: rgba(255, 150, 171);
+            text-align: center;           
+      }
+          /*contact*/
+       .contact {
+            display: block;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+      }
+        .contact h2{
+            color: rgb(54, 82, 110);
+            font-size: 25px;
+        }
+        .contact .infos{
+            display:flex;
+            margin-top: 30px; 
+            justify-content: center;
+        }
+        .contact .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .contact .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: gray;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .infos .right{
+            height: 200px;               
+        }
+        .contact .infos .right iframe{
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba(39,40,34,0.50);
+        }
+        /*footer*/
+       	.footer{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(25,26,30);
+            padding: 30px;
+                }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6f48b039-d551-4036-b9a6-da127aca41a0/ddbrlcp-b50f9c59-f51c-4e4b-aefd-2d9c9902e0a1.png/v1/fill/w_1280,h_1280,strp/twice_logo_png_by_seokjingayhaha_ddbrlcp-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzZmNDhiMDM5LWQ1NTEtNDAzNi1iOWE2LWRhMTI3YWNhNDFhMFwvZGRicmxjcC1iNTBmOWM1OS1mNTFjLTRlNGItYWVmZC0yZDljOTkwMmUwYTEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.T79vc-VMj5tsCT9UcLxUVE8lFz_Qqu8QroJlx5hv7CQ">
+                  TWICE and ONCE
+                </div>
+                <div class="top-nav">
+                  <a href=#>JYP Fan's</a>
+                  <a href=#>Login</a>
+                </div>
+              </div>
+        </div>
+        <div class="nav">   
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li class="dropdown"><a href="#introduction">團體資訊</a>
+                <div class="dropdown-content">
+                <a href=#>團體歷史</a>
+                <a href=#>公司位置</a>
+                </div>
+                </li>
+                <li  class="dropdown"><a href="#faculty">成員簡介</a>
+                    <div class="dropdown-content">
+                        <a href=#>林娜璉</a>
+                        <a href=#>俞定延</a>
+                        <a href=#>平井桃</a>
+                        <a href=#>湊崎紗夏</a>
+                        <a href=#>朴志效</a>
+                        <a href=#>名井南</a>
+                        <a href=#>金多賢</a>
+                        <a href=#>孫彩瑛</a>
+                        <a href=#>周子瑜</a>
+                    </div>                       
+                </li>
+                <li class="dropdown"><a href="#about">相關資訊</a>
+                <div class="dropdown-content">
+                        <a href=#>JYP</a>
+                        </div>
+                </li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img src="https://ayutrend.com/wp-content/uploads/2022/05/20220521191128_22.jpg" /></li>
+                    <li><img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2022/05/22/realtime/17091342.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=1050&exp=3600" /></li>
+                    <li><img src="https://s.yimg.com/ny/api/res/1.2/MxCw7krM7sVzYURgB3WgqA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ4MA--/https://media.zenfs.com/vi/nownews.com/da4bb97d6dc53963bcdfa83418d8a0d1" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h1>團名由來</h1>
+            <h1>「讓大眾透過耳朵一次，再由眼睛一次，獲得雙重的感動」</h1>
+            <h1>「One In A Million」，意味著要成為百萬偶像團體中的唯一</h1>
+            <h1>粉絲們只要給予一次的愛，我們就會以兩倍的愛去報答大家</h1>
+        </div>
+       	<div class="faculty" id="faculty">
+            <h2>成員介紹</h2>
+            <div class="container">
+                <a class="teacher" href="">
+                    <img src="https://pic.pimg.tw/k23852/1537551929-300585778_wn.jpg" />
+                    <h3>林娜璉</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://www.twgreatdaily.com/imgs/image/163/16347988.jpg" />
+                    <h3>俞定延</h3>
+               </a>
+               <a class="teacher" href="">
+                   <img src="https://imgur.dcard.tw/7sWh5LCh.jpg" />
+                   <h3>平井桃</h3>
+               </a>
+        </div>
+        <div class="faculty" id="faculty">
+            <div class="container">
+                <a class="member" href="">
+                    <img src="https://imgur.com/p9ZPd6Z.jpg" />
+                    <h3>湊崎紗夏</h3>
+                </a>
+                <a class="member" href="">
+                    <img src="https://www.36840.com/yule/res/2022/10-25/14/48f458d88d616bc04e2e8932a12cdbbf.jpg" />
+                    <h3>朴志效</h3>
+               </a>
+               <a class="member" href="">
+                   <img src="http://i.imgur.com/s8TUC4c.jpg" />
+                   <h3>名井南</h3>
+               </a>
+        </div>
+         <div class="faculty" id="faculty">
+            <div class="container">
+                <a class="once" href="">
+                    <img src="https://imgur.dcard.tw/95wGBH4h.jpg" />
+                    <h3>金多賢</h3>
+                </a>
+                <a class="once" href="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chaeyoung_at_a_fansigning_event_on_November_25%2C_2018_%282%29.jpg/220px-Chaeyoung_at_a_fansigning_event_on_November_25%2C_2018_%282%29.jpg" />
+                    <h3>孫彩瑛</h3>
+               </a>
+               <a class="once" href="">
+                   <img src="https://img.ltn.com.tw/Upload/ent/page/800/2020/08/22/3267861_1.jpg" />
+                   <h3>周子瑜</h3>
+               </a>
+        </div>
+    </div>
+     <div class="contact" id="about">
+    <div class="container">
+        <h2>聯絡資訊</h2>
+        <div class="infos">
+            <div class="left">
+                <b>JYP娛樂公司</b>
+                <span>南韓首爾特別市江東區江東大路205號448-13,JYP Center大樓）</span>
+                <b> 電話:（86）02-3438-2300</b>
+                <span>分機:3431、3432、3433</span>
+                <b> 傳真:03-5593142</b>
+                <span>分機:3440</span>
+            </div>
+            <div class="right">
+<iframe src="https://www.google.com/maps/embed?pb=!4v1672471046077!6m8!1m7!1sYD865FPSjVcG8N-dYZ-fVA!2m2!1d37.52425459880527!2d127.1290079536689!3f116.61620191509398!4f-3.9823260969837406!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+                </div>
+        </div>
+        <div class="footer">
+            &copy;Copyright 2022 Department of Information Management, TWICE. All rights reserved. 維護者 Yun_
+        </div>
+        </div>
+          </div>
+            </div>
+     </body>
+</html>
+
